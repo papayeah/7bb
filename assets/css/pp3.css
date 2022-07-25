@@ -73,9 +73,9 @@ p {
   height: 220rem;
   background-attachment: fixed;
   /* background-color: coral; */
-  background-image: url("../imgs/TAL/TAL_F7.png");
+  background-image: url("../imgs/LL/LL_F4.png");
   background-position: top center;
-  background-size: auto;
+  background-size: 100%;
 }
 
 #synopsis, .grid__col > h6 {
