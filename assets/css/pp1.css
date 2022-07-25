@@ -1,0 +1,87 @@
+/* Google Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+/* Main CSS */
+:root {
+  font-size: 3pt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #3d3d3d;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h6 {
+  color: #e5e5e5;
+  font-family: 'Cabin', 'Arial', sans-serif;
+  font-size: 27rem;
+  font-weight: 100;
+  line-height: 45rem;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  color: #ffd503;
+  display: grid;
+  font-size: 6rem;
+  margin: 5rem 5rem 0 0;
+  position: fixed;
+  text-align: right;
+  text-decoration: none;
+  right: 0;
+  z-index: 1;
+}
+
+nav > a {
+  width: 50rem;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+p {
+  color: #e5e5e5;
+  font-family: 'PT Serif', 'Times New Roman', serif;
+  font-size: 4rem;
+  line-height: normal;
+  margin: 1rem;
+}
+
+#heroImage {
+  position: relative;
+  height: 216rem;
+  background-attachment: fixed;
+  /* background-color: coral; */
+  background-image: url("../imgs/TAL/TAL_F7.png");
+  background-position: top center;
+  background-size: auto;
+}
+
+#synopsis {
+  margin: 1rem 0 0 5rem;
+  width: 100%;
+}
+
+.grid {
+  margin: 0;
+}
+
+.grid__col {
+  padding: 0;
+}
