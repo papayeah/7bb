@@ -1,11 +1,20 @@
 window.addEventListener('scroll', function(e) {
-  var wScroll = window.pageYOffset;
-  var topEl   = document.getElementById('container').childNodes;
-  
-  // topEl.forEach(function(el) {
-  //   // console.log(el, wScroll);
-  //   topEl.style.opacity = wScroll/2 + "%";
-  // });
 
-    topEl.style.opacity = wScroll/2 + "%";
+  var container   = document.getElementById('container');
+  var wHeight     = window.innerHeight;
+  var wScroll     = window.pageYOffset;
+
+  var opacity;
+
+  if(wScroll > wHeight) {
+    wScroll = wHeight;
+  }
+
+  opacity = wScroll/wHeight;
+  container.style.filter = 'blur('+ opacity*20 +'px)';
+
+  // console.log(wScroll);
+  // console.log(opacity);
+
+  // topEl.style.opacity = wScroll/2 + "%";
 });

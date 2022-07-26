@@ -6,7 +6,7 @@
 :root {
   font-size: 3pt;
 }
-/* 
+/*
 ::scrollbar {
   width: 3rem;
 }
@@ -48,7 +48,6 @@ footer {
   bottom: 0;
   display: table;
   height: 23rem;
-  margin-top: 3rem;
   width: 100%;
 }
 
@@ -119,6 +118,10 @@ sup {
 
 .grid__col {
   padding: 0;
+}
+
+.grid__col:last-of-type {
+  margin-bottom: 3rem;
 }
 
 .grid__col > sup {
