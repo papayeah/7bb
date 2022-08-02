@@ -1,13 +1,13 @@
 /* Google Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
 
 /* Main CSS */
 :root {
   font-size: 3pt;
 }
-/*
-::scrollbar {
+
+/* ::scrollbar {
   width: 3rem;
 }
 
@@ -38,26 +38,68 @@ a > img:hover {
 }
 
 body {
-  background-color: #3d3d3d;
   margin: 0;
   overflow-x: hidden;
 }
 
-footer {
-  background-color: thistle;
-  bottom: 0;
-  display: table;
-  height: 23rem;
-  width: 100%;
+.site-stuff {
+  background-color: #3d3d3d;
+  position: relative;
+  z-index: 1;
 }
+
+figcaption {
+  color: #e5e5e5;
+  left: 0;
+  padding: 5rem;
+  position: absolute;
+  top: 0;
+}
+
+figcaption > h1, h6 {
+  color: #e5e5e5;
+  font-family: 'Cabin', 'Arial', sans-serif;
+  font-size: 6rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+figcaption > h6 {
+  font-size: 3rem;
+}
+
+footer {
+  background-color: #ffd503;
+  bottom: 0;
+  color: #3d3d3d;
+  /* height: 18rem; */
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+.footer-stuff {
+  margin-left: 5rem;
+  text-decoration: none;
+}
+
+.footer-stuff > ul {
+  list-style: none;
+}
+
 
 img {
   width: 100%;
 }
 
+.image {
+  margin: 3rem 5rem;
+  position: relative;
+}
+
 small {
   color: #ffd503;
-  font-family: 'PT Serif', 'Times New Roman', serif;
+  font-family: 'Crimson Pro', 'Times New Roman', serif;
   font-size: 4rem;
   text-align: right;
 }
@@ -74,7 +116,7 @@ span {
 
 sup {
   color: #ffd503;
-  font-family: 'PT Serif', 'Times New Roman', serif;
+  font-family: 'Crimson Pro', 'Times New Roman', serif;
   font-size: 10rem;
 }
 
@@ -94,22 +136,16 @@ sup {
 #top {
   height: 235rem;
   margin: 0 0 0 5rem;
-  position: relative;
 }
 
 #top > #container {
   position: fixed;
   width: 100%;
-}
 
-.fadeIn {
-  opacity: 100%;
-  transition: opacity 0.5s ease;
-}
-
-.fadeOut {
-  opacity: 100%;
-  transition: opacity 0.5s ease;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .grid {
@@ -128,12 +164,8 @@ sup {
   font-size: 3rem;
 }
 
-.image {
-  margin: 3rem 5rem;
-}
-
 /* Media Queries */
-@media(max-width: 960px) {
+/* @media(max-width: 960px) {
   .content {
     width: auto;
   }
@@ -141,4 +173,4 @@ sup {
 
 @media(max-width: 1440px) and (max-width: 1980px) {
 
-}
+} */
