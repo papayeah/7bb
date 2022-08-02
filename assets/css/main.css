@@ -33,7 +33,7 @@ a > img {
 }
 
 a > img:hover {
-  filter: brightness(75%);
+  filter: brightness(85%);
   transition: filter 0.9s ease;
 }
 
@@ -44,8 +44,8 @@ body {
 
 .site-stuff {
   background-color: #3d3d3d;
+  margin-bottom: 10vh;
   position: relative;
-  z-index: 1;
 }
 
 figcaption {
@@ -72,7 +72,8 @@ footer {
   background-color: #ffd503;
   bottom: 0;
   color: #3d3d3d;
-  /* height: 18rem; */
+  font-size: 2rem;
+  height: 10vh;
   position: fixed;
   width: 100%;
   z-index: -1;
@@ -134,18 +135,14 @@ sup {
 }
 
 #top {
-  height: 235rem;
+  height: 96vh;
   margin: 0 0 0 5rem;
+  pointer-events: none;
 }
 
 #top > #container {
   position: fixed;
   width: 100%;
-
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
 }
 
 .grid {
@@ -162,6 +159,12 @@ sup {
 
 .grid__col > sup {
   font-size: 3rem;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Media Queries */
