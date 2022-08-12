@@ -22,18 +22,18 @@ body {
   overflow-x: hidden;
 }
 
-h1, h6 {
+.title, .subtitle {
   color: #e5e5e5;
   font-family: 'Cabin', 'Arial', sans-serif;
-  font-size: 27rem;
+  font-size: 18rem;
   font-weight: 100;
-  line-height: 45rem;
+  line-height: 36rem;
   margin: 0 0 0 5rem;
 }
 
-h6 {
-  font-size: 13rem;
-  line-height: 23rem;
+.subtitle {
+  font-size: 9rem;
+  line-height: 9rem;
 }
 
 img {
@@ -70,9 +70,8 @@ p {
 
 #heroImage {
   position: relative;
-  height: 220rem;
+  height: 90vh;
   background-attachment: fixed;
-  /* background-color: coral; */
   background-image: url("../imgs/TAL/TAL_F7.png");
   background-position: top center;
   background-size: auto;
