@@ -40,6 +40,10 @@ img {
   width: 100%;
 }
 
+main {
+  margin: 0;
+}
+
 nav {
   color: #ffd503;
   display: grid;
@@ -70,11 +74,12 @@ p {
 
 #heroImage {
   position: relative;
-  height: 90vh;
+  height: 92vh;
   background-attachment: fixed;
   background-image: url("../imgs/TAL/TAL_F7.png");
   background-position: top center;
   background-size: auto;
+  width: 100vw;
 }
 
 #synopsis, .grid__col > h6 {

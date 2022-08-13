@@ -4,14 +4,14 @@ window.addEventListener('scroll', function(e) {
   var wHeight     = window.innerHeight;
   var wScroll     = window.pageYOffset;
 
-  var opacity;
+  var blurAmount;
 
   if(wScroll > wHeight) {
     wScroll = wHeight;
   }
 
-  opacity = wScroll/wHeight;
-  container.style.filter = 'blur('+ opacity*20 +'px)';
+  blurAmount = (wScroll/wHeight)*20;
+  container.style.filter = 'blur('+ blurAmount +'px)';
 
   // console.log(wScroll);
   // console.log(opacity);
