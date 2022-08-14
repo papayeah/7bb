@@ -1,0 +1,114 @@
+/* Google Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+
+/* Main CSS */
+:root {
+  font-size: 3pt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.site-stuff {
+  background-color: #3d3d3d;
+  position: relative;
+}
+
+/* Top-Right Nav */
+nav {
+  color: #ffd503;
+  display: grid;
+  font-size: 6rem;
+  margin: 5.65vw 0 0 0;
+  position: fixed;
+  text-align: right;
+  right: 5rem;
+  z-index: 1;
+}
+
+nav a {
+  width: 50rem;
+}
+
+/* Content */
+img {
+  width: 100%;
+}
+
+small {
+  bottom: 0;
+  color: #ffd503;
+  font-family: 'Crimson Pro', 'Times New Roman', serif;
+  font-size: 1vw;
+  line-height: 1.3vw;
+  position: absolute;
+  right: 11rem;
+  top: 12.5vw;
+  text-align: right;
+}
+
+span {
+  color: #e5e5e5;
+  font-family: 'Cabin', 'Arial', sans-serif;
+  font-size: 9vw;
+  font-weight: normal;
+  line-height: 10.25vw;
+  margin: 0;
+  white-space: nowrap;
+  width: auto;
+}
+
+#four {
+  padding-left: 3rem;
+}
+
+#top {
+  height: 100vh;
+  margin: 0 0 0 5rem;
+  pointer-events: none;
+}
+
+#top #container {
+  position: fixed;
+  width: 100%;
+}
+
+.grid {
+  margin: 0;
+}
+
+.grid__col {
+  clear: both;
+  padding: 0;
+}
+
+
+.grid__col > sup {
+  font-size: 1.1vw;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 950px) {
+
+}
+
+@media screen and (max-width: 475px) {
+
+}
