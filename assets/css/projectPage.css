@@ -1,0 +1,134 @@
+/* Google Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+
+/* Main CSS */
+:root {
+  font-size: 3pt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #3d3d3d;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  margin: 0;
+}
+
+nav {
+  color: #ffd503;
+  display: grid;
+  font-size: 6rem;
+  margin: 5rem 5rem 0 0;
+  position: fixed;
+  text-align: right;
+  text-decoration: none;
+  right: 0;
+  z-index: 1;
+}
+
+nav > a {
+  width: 50rem;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+#heroImage {
+  position: relative;
+  height: 92vh;
+  background-attachment: fixed;
+  background-image: url("../imgs/TAL/TAL_F7.png");
+  background-position: top center;
+  background-size: auto;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* Project Description */
+p {
+  color: #e5e5e5;
+  font-family: 'Crimson Pro', 'Times New Roman', serif;
+  font-size: 5rem;
+  line-height: normal;
+  margin: 1rem 1rem 15rem 5rem;
+}
+
+.title, .subtitle {
+  color: #e5e5e5;
+  font-family: 'Cabin', 'Arial', sans-serif;
+  font-size: 18rem;
+  font-weight: 100;
+  line-height: 36rem;
+  margin: 0 0 0 5rem;
+}
+
+.subtitle {
+  font-size: 9rem;
+  line-height: 9rem;
+}
+
+#synopsis, .grid__col > h6 {
+  margin: 1rem 0 0 5rem;
+  width: 100%;
+}
+
+#process {
+  width: 100%;
+}
+
+.grid {
+  margin: 0;
+}
+
+.grid__col {
+  padding: 0;
+}
+
+.secondColumn {
+  padding-left: 5rem;
+}
+
+/* Lightboxes */
+.lightbox {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+/* .lightbox:target {
+  display: flex;
+} */
+
+.lightbox-outer {
+  cursor: auto;
+  position: relative;
+  width: 75%;
+}
+
+.lightbox-outer img {
+  z-index: 2;
+}
