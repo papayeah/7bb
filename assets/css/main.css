@@ -44,7 +44,6 @@ body {
 
 .site-stuff {
   background-color: #3d3d3d;
-  /* margin-bottom: 14vh; */
   position: relative;
 }
 
@@ -118,9 +117,9 @@ sup {
 }
 
 #top {
-  height: 96vh;
+  cursor: url("../brand/pointerDown.svg"), n-resize;
+  height: 55vw;
   margin: 0 0 0 5rem;
-  pointer-events: none;
 }
 
 #top > #container {
@@ -153,29 +152,13 @@ sup {
 }
 
 /* media queries  */
-@media screen and (max-width: 1920px) {
-
-}
-
 @media screen and (max-width: 1440px) {
-
+  #lineTwo small, sup {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 640px) {
-
-  /* #top {
-    height: 40vh;
-  }
-
-  #top span {
-    font-size: 15rem;
-    line-height: 12rem;
-  }
-
-  #top sup {
-    font-size: 6rem;
-  } */
-
   figcaption > h1 {
     font-size: 4rem;
   }

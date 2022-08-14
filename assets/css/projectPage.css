@@ -58,6 +58,7 @@ main {
   z-index: 1;
 }
 
+/* Individual Project Hero Images */
 #heroImage {
   background-attachment: fixed;
   background-image: url("../imgs/TAL/TAL_F7.png");
@@ -69,7 +70,16 @@ main {
   z-index: -1;
 }
 
+.project2 {
+   background-image: url("../imgs/GBH/GBH_F3.png") !important;
+}
+
+.project3 {
+   background-image: url("../imgs/LL/LL_F4.png") !important;
+}
+
 .hero  {
+  cursor: url("../brand/pointerDown.svg"), auto;
   padding-left: 0;
 }
 
@@ -179,6 +189,14 @@ footer {
   padding: 0;
 }
 
+.footer-stuff p {
+  color: #3d3d3d;
+  font-size: 5rem;
+  margin: 0 5rem 0 0;
+  text-align: right;
+  text-transform: none;
+}
+
 footer li {
   display: inline-block;
   padding: 0 2rem;
@@ -231,6 +249,11 @@ footer a:active {
   .footer-stuff {
     margin-left: 3rem;
   }
+
+  .footer-stuff p {
+    font-size: 4rem;
+    margin: -2.5vw 1vw 0 0;
+  }
 }
 
 @media screen and (min-width: 700px) and (max-width: 950px) {
@@ -251,10 +274,15 @@ footer a:active {
   footer {
     display: inline-block;
     font-size: 4vw;
-    padding: 1vw 0;
+    padding: 3vw 0;
   }
 
   footer li {
     padding-left: 0;
+  }
+
+  .footer-stuff p {
+    font-size: 3rem;
+    margin: 0 2vw 0 0;
   }
 }
