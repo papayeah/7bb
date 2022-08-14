@@ -127,10 +127,11 @@ small {
 span {
   color: #e5e5e5;
   font-family: 'Cabin', 'Arial', sans-serif;
-  font-size: 45rem;
+  font-size: 9vw;
   font-weight: normal;
-  line-height: 45rem;
+  line-height: 9.5vw;
   margin: 0;
+  white-space: nowrap;
   width: auto;
 }
 
@@ -190,13 +191,17 @@ sup {
 }
 
 /* media queries  */
+@media screen and (max-width: 1920px) {
+
+}
+
 @media screen and (max-width: 1440px) {
-  
+
 }
 
 @media screen and (max-width: 640px) {
 
-  #top {
+  /* #top {
     height: 40vh;
   }
 
@@ -207,7 +212,7 @@ sup {
 
   #top sup {
     font-size: 6rem;
-  }
+  } */
 
   figcaption > h1 {
     font-size: 4rem;
